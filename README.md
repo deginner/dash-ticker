@@ -89,3 +89,17 @@ openresty -p `pwd` -c conf/nginx.conf
 ```
 
 If this server is serving the data directly to clients, it will likely be doing so by using ssl certs. The above config can be updated to include any diretives that you would use in a typical nginx configuration.
+
+#### Result
+
+`curl http://localhost:8450/v1/ticker/USD_DASH`:
+
+```
+{
+  "timestamp": 1452786977.696346,
+  "market": "USD_DASH",
+  "source": "coinapult_poloniex",
+  "bid": 346, "bid_display": "3.46",
+  "ask": 354, "ask_display": "3.54"
+}
+```
