@@ -10,4 +10,4 @@ make
 supervisord
 ```
 
-Python 2.7 is required. You can run `make test` to check if the ticker is working as intended.
+Python 2.7 is required and a virtualenv is recommended. You can run `make test` to check if the ticker is working as intended.
